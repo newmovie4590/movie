@@ -35,16 +35,16 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','0'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002560354232')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 request_channel = environ.get('REQUEST_CHANNEL', '0')
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002560354232'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/chatd5_bot') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/moviesonfreedemand/36")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "71b759d983b32955281e5bb0e90efaa7cf199074")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'udlinks.com')
@@ -63,8 +63,8 @@ SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
 #---------------------------------------------------------------
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else True
+REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else true
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
