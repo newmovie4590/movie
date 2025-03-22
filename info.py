@@ -64,7 +64,7 @@ REF_PREMIUM = 30
 PREMIUM_POINT = 1500
 #---------------------------------------------------------------
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else True
-REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else true
+REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else True
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
