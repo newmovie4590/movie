@@ -57,7 +57,7 @@ async def start(client:Client, message):
         settings = await get_settings(grp_id)         
         verify_id_info = await db.get_verify_id_info(user_id, verify_id)
         if not verify_id_info or verify_id_info["verified"]:
-            await message.reply("<b> You Are Verified Go to Group और दोबारा अपनी मूवी पर क्लिक करें ‼️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ɢᴇᴛ ꜰɪʟᴇ ‼️ url=f"https://telegram.me/{temp.U_NAME}?start=file_{grp_id}_{file_id}"</b>)
+            await message.reply("<b> You Are Verified Go to Group और दोबारा अपनी मूवी पर क्लिक करें</b>")
             return  
         ist_timezone = pytz.timezone('Asia/Kolkata')
         if await db.user_verified(user_id):
