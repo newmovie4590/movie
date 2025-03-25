@@ -56,9 +56,9 @@ async def start(client:Client, message):
         grp_id = temp.CHAT.get(user_id, 0)
         settings = await get_settings(grp_id)         
         verify_id_info = await db.get_verify_id_info(user_id, verify_id)
-      if not verify_id_info or verify_id_info["verified"]:
+        if not verify_id_info or verify_id_info["verified"]:
             await message.reply("<b> You Are Verified Go to Group और दोबारा अपनी मूवी पर क्लिक करें</b>")
-         return
+            return
         ist_timezone = pytz.timezone('Asia/Kolkata')
         if await db.user_verified(user_id):
             key = "third_time_verified"
